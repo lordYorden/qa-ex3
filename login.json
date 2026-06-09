@@ -1,0 +1,17 @@
+[
+  {
+    "username": "23-12-2024",
+    "password": "afeka2025",
+    "expectedResult": "route=account/login"
+  },
+  {
+    "username": "alexg@gmail.com",
+    "password": "12345676458dasas9",
+    "expectedResult": "route=account/login"
+  },
+  {
+    "username": "alexg@gmail.com",
+    "password": "123456789",
+    "expectedResult": "route=account/account"
+  }
+]
