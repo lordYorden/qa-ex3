@@ -24,8 +24,8 @@ import java.io.IOException;
 
 
 
-import pages.Login_pom_sauce_demo;
-import pom_test_cases.base_test_class;
+import qa.orderflow.examples.pages.Login_pom_sauce_demo;
+import qa.orderflow.examples.pom_test_cases.base_test_class;
 
 
 

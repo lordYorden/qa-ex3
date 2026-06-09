@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import pages.Add_to_cart_sauce_demo;
+import  qa.orderflow.examples.pages.Add_to_cart_sauce_demo;
 
 public class base_prod_page<AddToCartBtn> {
 

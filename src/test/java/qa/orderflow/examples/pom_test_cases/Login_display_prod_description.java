@@ -12,12 +12,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Dimension;
 import java.io.IOException;
-import pages.Login_pom_sauce_demo;
+import qa.orderflow.examples.pages.Login_pom_sauce_demo;
 
-import pages.Add_to_cart_sauce_demo;
-import pom_test_cases.base_test_class;
+import qa.orderflow.examples.pages.Add_to_cart_sauce_demo;
+import qa.orderflow.examples.pom_test_cases.base_test_class;
 
-import pages.Set_Your_product;
+import qa.orderflow.examples.pages.Set_Your_product;
 
 //import pages.backpak_prod_page;
 
