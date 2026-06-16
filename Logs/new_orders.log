@@ -1,0 +1,59 @@
+[INFO ] 2026-06-16 15:45:55.979 [main] NewOrderTests - Loading products from order-category-groceries.json
+[INFO ] 2026-06-16 15:45:56.751 [main] NewOrderTests - adding product Dog Food (3)
+[DEBUG] 2026-06-16 15:45:58.249 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:45:58.250 [main] NewOrderTests - finished adding products
+[INFO ] 2026-06-16 15:45:58.563 [main] NewOrderTests - confirmed order
+[INFO ] 2026-06-16 15:45:59.803 [main] NewOrderTests - Loading products from order-above-sum.json
+[INFO ] 2026-06-16 15:46:00.549 [main] NewOrderTests - adding product Amazon Echo Plus (61)
+[DEBUG] 2026-06-16 15:46:02.066 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:02.066 [main] NewOrderTests - adding product Apple HomePod Mini Cosmic Grey (27)
+[DEBUG] 2026-06-16 15:46:02.574 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:02.575 [main] NewOrderTests - adding product iPhone 12 Silicone Case with MagSafe Plum (30)
+[DEBUG] 2026-06-16 15:46:03.160 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:03.161 [main] NewOrderTests - adding product Apple (7)
+[DEBUG] 2026-06-16 15:46:04.077 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:04.077 [main] NewOrderTests - adding product Dog Food (25)
+[DEBUG] 2026-06-16 15:46:04.394 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:04.395 [main] NewOrderTests - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 15:46:04.691 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:04.691 [main] NewOrderTests - adding product Green Bell Pepper (3)
+[DEBUG] 2026-06-16 15:46:05.015 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:05.015 [main] NewOrderTests - finished adding products
+[ERROR] 2026-06-16 15:46:05.225 [main] NewOrderTests - website error: Total amount ($10001.36) exceeds the maximum allowed ($10000.00).
+[INFO ] 2026-06-16 15:46:06.293 [main] NewOrderTests - Loading products from order-below-sum.json
+[INFO ] 2026-06-16 15:46:07.056 [main] NewOrderTests - adding product Amazon Echo Plus (61)
+[DEBUG] 2026-06-16 15:46:08.569 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:08.569 [main] NewOrderTests - adding product Apple HomePod Mini Cosmic Grey (27)
+[DEBUG] 2026-06-16 15:46:08.902 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:08.902 [main] NewOrderTests - adding product iPhone 12 Silicone Case with MagSafe Plum (30)
+[DEBUG] 2026-06-16 15:46:09.252 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:09.252 [main] NewOrderTests - adding product Apple (8)
+[DEBUG] 2026-06-16 15:46:10.093 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:10.093 [main] NewOrderTests - adding product Dog Food (25)
+[DEBUG] 2026-06-16 15:46:10.386 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:10.386 [main] NewOrderTests - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 15:46:10.690 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:10.691 [main] NewOrderTests - finished adding products
+[INFO ] 2026-06-16 15:46:11.197 [main] NewOrderTests - confirmed order
+[INFO ] 2026-06-16 15:46:12.217 [main] NewOrderTests - Loading products from order-category-furniture.json
+[INFO ] 2026-06-16 15:46:12.953 [main] NewOrderTests - adding product Annibale Colombo Sofa (1)
+[DEBUG] 2026-06-16 15:46:14.406 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:14.406 [main] NewOrderTests - finished adding products
+[INFO ] 2026-06-16 15:46:14.691 [main] NewOrderTests - confirmed order
+[INFO ] 2026-06-16 15:46:15.671 [main] NewOrderTests - Loading products from order-above-stock.json
+[INFO ] 2026-06-16 15:46:16.376 [main] NewOrderTests - adding product Apple (9)
+[DEBUG] 2026-06-16 15:46:17.877 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:17.878 [main] NewOrderTests - finished adding products
+[ERROR] 2026-06-16 15:46:18.566 [main] NewOrderTests - website error: Requested quantity (9) for "Apple" exceeds available stock (8).
+[INFO ] 2026-06-16 15:46:19.572 [main] NewOrderTests - Loading products from order-below-stock.json
+[INFO ] 2026-06-16 15:46:22.328 [main] NewOrderTests - adding product Apple (5)
+[DEBUG] 2026-06-16 15:46:23.756 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:23.756 [main] NewOrderTests - finished adding products
+[INFO ] 2026-06-16 15:46:24.546 [main] NewOrderTests - confirmed order
+[INFO ] 2026-06-16 15:46:25.595 [main] NewOrderTests - Loading products from order-category-combined.json
+[INFO ] 2026-06-16 15:46:26.324 [main] NewOrderTests - adding product Dog Food (3)
+[DEBUG] 2026-06-16 15:46:27.755 [main] NewOrderTests - product added to cart
+[INFO ] 2026-06-16 15:46:27.755 [main] NewOrderTests - adding product Annibale Colombo Sofa (1)
+[DEBUG] 2026-06-16 15:46:28.605 [main] NewOrderTests - product added to cart
+[DEBUG] 2026-06-16 15:46:28.605 [main] NewOrderTests - finished adding products
+[ERROR] 2026-06-16 15:46:28.781 [main] NewOrderTests - website error: Products from "furniture" and "groceries" cannot be ordered together.
