@@ -1,0 +1,12 @@
+[
+  {
+    "name":  "Dog Food",
+    "category": "Groceries",
+    "quantity": 3
+  },
+  {
+    "name":  "Annibale Colombo Sofa",
+    "category": "Furniture",
+    "quantity": 1
+  }
+]

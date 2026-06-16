@@ -1,0 +1,14 @@
+[ERROR] 2026-06-16 16:45:57.455 [main] CartRemoveTest - Cart is empty couldn't remove items
+[INFO ] 2026-06-16 16:46:01.246 [main] CartRemoveTest - Loading products from cart-remove.json
+[INFO ] 2026-06-16 16:46:01.248 [main] CartRemoveTest - adding product iPhone 12 Silicone Case with MagSafe Plum (30)
+[DEBUG] 2026-06-16 16:46:04.432 [main] CartRemoveTest - product added to cart
+[INFO ] 2026-06-16 16:46:04.432 [main] CartRemoveTest - adding product Apple (8)
+[DEBUG] 2026-06-16 16:46:05.359 [main] CartRemoveTest - product added to cart
+[INFO ] 2026-06-16 16:46:05.359 [main] CartRemoveTest - adding product Dog Food (25)
+[DEBUG] 2026-06-16 16:46:05.748 [main] CartRemoveTest - product added to cart
+[INFO ] 2026-06-16 16:46:05.748 [main] CartRemoveTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 16:46:06.159 [main] CartRemoveTest - product added to cart
+[DEBUG] 2026-06-16 16:46:06.159 [main] CartRemoveTest - finished adding products
+[DEBUG] 2026-06-16 16:46:06.159 [main] CartRemoveTest - removing product with id 22 from cart
+[DEBUG] 2026-06-16 16:46:06.234 [main] CartRemoveTest - testing product is removed
+[INFO ] 2026-06-16 16:46:06.246 [main] CartRemoveTest - product removed from cart
