@@ -1,0 +1,22 @@
+[
+  {
+    "name":  "iPhone 12 Silicone Case with MagSafe Plum",
+    "category": "Mobile Accessories",
+    "quantity": 30
+  },
+  {
+    "name":  "Apple",
+    "category": "Groceries",
+    "quantity": 8
+  },
+  {
+    "name":  "Dog Food",
+    "category": "Groceries",
+    "quantity": 25
+  },
+  {
+    "name":  "Chicken Meat",
+    "category": "Groceries",
+    "quantity": 1
+  }
+]

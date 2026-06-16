@@ -19,18 +19,26 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class NewOrderSumTest {
+public class NewOrderTests {
     private WebDriver driver;
     private JSONArray products;
-    Logger logger = LogManager.getLogger(NewOrderSumTest.class);
+    Logger logger = LogManager.getLogger(NewOrderTests.class);
 
-    public void loadProductsFromJson(String fileName) throws IOException, ParseException {
-        JSONParser jsonParser = new JSONParser();
-        FileReader reader;
-        reader = new FileReader(fileName);
+    public void loadProductsFromJson(String fileName){
+        try {
+            JSONParser jsonParser = new JSONParser();
+            FileReader reader;
+            reader = new FileReader(fileName);
 
-        //Read JSON file
-        products = (JSONArray) jsonParser.parse(reader);
+            //Read JSON file
+            products = (JSONArray) jsonParser.parse(reader);
+            logger.info("Loading products from {}",
+                    fileName);
+        } catch (ParseException | IOException e ) {
+            logger.error("Error loading products from {}\nwith error: {}",
+                    fileName, e);
+        }
+
     }
 
     @Before
@@ -38,26 +46,57 @@ public class NewOrderSumTest {
     {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        String jsonFile = "order-category-combined.json";
-
-        try {
-            loadProductsFromJson(jsonFile);
-            logger.info("Loading products from {}",
-                    jsonFile);
-
-        } catch (ParseException | IOException e ) {
-            logger.error("Error loading products from {}\nwith error: {}",
-                    jsonFile, e);
-        }
     }
 
     @After
     public void tearDown()
     {
-        //driver.quit();
+        products.clear();
+        driver.quit();
     }
 
     @Test
+    public void orderBelowSum(){
+        loadProductsFromJson("order-below-sum.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderAboveSum(){
+        loadProductsFromJson("order-above-sum.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderAboveStock(){
+        loadProductsFromJson("order-above-stock.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderBelowStock(){
+        loadProductsFromJson("order-below-stock.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderCategoryGroceries(){
+        loadProductsFromJson("order-category-groceries.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderCategoryFurniture(){
+        loadProductsFromJson("order-category-furniture.json");
+        preformOrder();
+    }
+
+    @Test
+    public void orderCategoryCombined(){
+        loadProductsFromJson("order-category-combined.json");
+        preformOrder();
+    }
+
     public void preformOrder() {
         new_order_page page = new new_order_page(driver);
 

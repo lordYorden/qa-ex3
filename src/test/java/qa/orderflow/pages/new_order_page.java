@@ -33,6 +33,8 @@ public class new_order_page {
 
     By errorMsg = By.cssSelector("#validation-errors p[id^='validation-error-']");
 
+    By emptyCart = By.xpath("//*[normalize-space(.)='No products selected yet. Browse and add products above.']");
+
     public void selectCategory(String category){
         WebElement categoryDropdown = wait.until(ExpectedConditions.elementToBeClickable(catSelect));
         Select drpCat = new Select(categoryDropdown);
@@ -73,6 +75,26 @@ public class new_order_page {
                 ExpectedConditions.presenceOfElementLocated(quantityInput));
 
         input.click();
+    }
+
+    public boolean isProductInCart(String productId){
+        try {
+            By cardId = By.id("order-item-" + productId);
+            WebElement productCard = driver.findElement(cardId);
+
+            return productCard.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isCartEmpty(){
+        try {
+            WebElement msg = wait.until(ExpectedConditions.presenceOfElementLocated(emptyCart));
+            return msg.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public void submitOrder(){
