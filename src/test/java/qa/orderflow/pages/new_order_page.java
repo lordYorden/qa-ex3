@@ -66,6 +66,15 @@ public class new_order_page {
         input.sendKeys(String.valueOf(quantity));
     }
 
+    public void removeProductFromCart(String productId){
+        By quantityInput = By.id("remove-item-" + productId);
+
+        WebElement input = wait.until(
+                ExpectedConditions.presenceOfElementLocated(quantityInput));
+
+        input.click();
+    }
+
     public void submitOrder(){
         clickButtonWithSelector(submitBtn);
     }

@@ -38,7 +38,7 @@ public class NewOrderSumTest {
     {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        String jsonFile = "category-normal.json";
+        String jsonFile = "order-category-combined.json";
 
         try {
             loadProductsFromJson(jsonFile);
@@ -54,11 +54,11 @@ public class NewOrderSumTest {
     @After
     public void tearDown()
     {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
-    public void sumTest() {
+    public void preformOrder() {
         new_order_page page = new new_order_page(driver);
 
         for (Object product : products) {
