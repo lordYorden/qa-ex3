@@ -1,0 +1,37 @@
+[
+  {
+    "name":  "Amazon Echo Plus",
+    "category": "Mobile Accessories",
+    "quantity": 61
+  },
+  {
+    "name":  "Apple HomePod Mini Cosmic Grey",
+    "category": "Mobile Accessories",
+    "quantity": 27
+  },
+  {
+    "name":  "iPhone 12 Silicone Case with MagSafe Plum",
+    "category": "Mobile Accessories",
+    "quantity": 30
+  },
+  {
+    "name":  "Apple",
+    "category": "Groceries",
+    "quantity": 7
+  },
+  {
+    "name":  "Dog Food",
+    "category": "Groceries",
+    "quantity": 25
+  },
+  {
+    "name":  "Chicken Meat",
+    "category": "Groceries",
+    "quantity": 1
+  },
+  {
+    "name": "Green Bell Pepper",
+    "category": "Groceries",
+    "quantity": 3
+  }
+]
