@@ -1,6 +1,7 @@
 package qa.orderflow.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.time.Duration;
-import java.util.List;
 
 public class OrderHistory {
 
@@ -28,31 +28,46 @@ public class OrderHistory {
     }
 
     public void clickExportCsv() {
-        wait.until(ExpectedConditions.elementToBeClickable(exportCsvBtn)).click();
+        WebElement exportButton = wait.until(ExpectedConditions.presenceOfElementLocated(exportCsvBtn));
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});",
+                exportButton
+        );
+
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(exportButton)).click();
+        } catch (org.openqa.selenium.ElementClickInterceptedException e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", exportButton);
+        }
     }
 
     public boolean isExportCsvEnabled() {
-
-        List<WebElement> buttons = driver.findElements(exportCsvBtn);
-
-        if (buttons.isEmpty()) {
-            return false;
-        }
-
-        return buttons.getFirst().isEnabled();
+        return !driver.findElements(exportCsvBtn).isEmpty()
+                && driver.findElement(exportCsvBtn).isEnabled();
     }
 
     public boolean isCsvFileDownloaded(String downloadPath) {
-        File folder = new File(downloadPath);
-        File[] files = folder.listFiles();
+        long endTime = System.currentTimeMillis() + 10000;
 
-        if (files == null) {
-            return false;
-        }
+        while (System.currentTimeMillis() < endTime) {
+            File folder = new File(downloadPath);
+            File[] files = folder.listFiles();
 
-        for (File file : files) {
-            if (file.getName().endsWith(".csv")) {
-                return true;
+            if (files != null) {
+                for (File file : files) {
+                    if (file.getName().startsWith("order_history")
+                            && file.getName().endsWith(".csv")
+                            && file.length() > 0) {
+                        return true;
+                    }
+                }
+            }
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return false;
             }
         }
 

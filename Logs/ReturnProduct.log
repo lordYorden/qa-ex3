@@ -1,0 +1,20 @@
+[INFO ] 2026-06-16 17:07:41.868 [main] ReturnProductTest - Loading products from return-product-without-orders.json
+[INFO ] 2026-06-16 17:07:43.704 [main] ReturnProductTest - return product is not available without orders
+[INFO ] 2026-06-16 17:09:19.330 [main] ReturnProductTest - Loading products from return-product-two-of-five.json
+[INFO ] 2026-06-16 17:09:20.566 [main] ReturnProductTest - adding product Dog Food (5)
+[DEBUG] 2026-06-16 17:09:24.908 [main] ReturnProductTest - product added to cart
+[DEBUG] 2026-06-16 17:09:24.910 [main] ReturnProductTest - finished adding products
+[INFO ] 2026-06-16 17:09:25.504 [main] ReturnProductTest - confirmed order
+[INFO ] 2026-06-16 17:09:26.525 [main] ReturnProductTest - returned 2 products from Dog Food successfully
+[INFO ] 2026-06-16 17:08:38.675 [main] ReturnProductTest - Loading products from return-product-five-of-two.json
+[INFO ] 2026-06-16 17:08:41.080 [main] ReturnProductTest - adding product Dog Food (2)
+[DEBUG] 2026-06-16 17:08:44.038 [main] ReturnProductTest - product added to cart
+[DEBUG] 2026-06-16 17:08:44.042 [main] ReturnProductTest - finished adding products
+[INFO ] 2026-06-16 17:08:44.824 [main] ReturnProductTest - confirmed order
+[INFO ] 2026-06-16 17:08:45.888 [main] ReturnProductTest - return of 5 products from Dog Food was rejected
+[INFO ] 2026-06-16 17:09:01.778 [main] ReturnProductTest - Loading products from return-product-zero.json
+[INFO ] 2026-06-16 17:09:03.666 [main] ReturnProductTest - adding product Dog Food (1)
+[DEBUG] 2026-06-16 17:09:06.891 [main] ReturnProductTest - product added to cart
+[DEBUG] 2026-06-16 17:09:06.893 [main] ReturnProductTest - finished adding products
+[INFO ] 2026-06-16 17:09:07.565 [main] ReturnProductTest - confirmed order
+[INFO ] 2026-06-16 17:09:08.438 [main] ReturnProductTest - return quantity 0 for Dog Food was prevented by the website. actual input value is 1
