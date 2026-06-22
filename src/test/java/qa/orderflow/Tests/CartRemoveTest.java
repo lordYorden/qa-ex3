@@ -1,4 +1,4 @@
-package qa.orderflow;
+package qa.orderflow.Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,12 +17,14 @@ import qa.orderflow.pages.new_order_page;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
-public class NewOrderTests {
+public class CartRemoveTest {
     private WebDriver driver;
     private JSONArray products;
-    Logger logger = LogManager.getLogger(NewOrderTests.class);
+    Logger logger = LogManager.getLogger(CartRemoveTest.class);
 
     public void loadProductsFromJson(String fileName){
         try {
@@ -38,6 +40,7 @@ public class NewOrderTests {
             logger.error("Error loading products from {}\nwith error: {}",
                     fileName, e);
         }
+
     }
 
     @Before
@@ -50,58 +53,13 @@ public class NewOrderTests {
     @After
     public void tearDown()
     {
-        products.clear();
         driver.quit();
     }
 
-    @Test
-    public void orderBelowSum(){
-        loadProductsFromJson("order-below-sum.json");
-        preformOrder();
-    }
+    public List<String> addProductsToCart(new_order_page page){
 
-    @Test
-    public void orderAboveSum(){
-        loadProductsFromJson("order-above-sum.json");
-        preformOrder();
-    }
+        ArrayList<String> productId = new ArrayList<>();
 
-    @Test
-    public void orderAboveStock(){
-        loadProductsFromJson("order-above-stock.json");
-        preformOrder();
-    }
-
-    @Test
-    public void orderBelowStock(){
-        loadProductsFromJson("order-below-stock.json");
-        preformOrder();
-    }
-
-    @Test
-    public void orderCategoryGroceries(){
-        loadProductsFromJson("order-category-groceries.json");
-        preformOrder();
-    }
-
-    @Test
-    public void orderCategoryFurniture(){
-        loadProductsFromJson("order-category-furniture.json");
-        preformOrder();
-    }
-
-    @Test
-    public void orderCategoryCombined(){
-        loadProductsFromJson("order-category-combined.json");
-        preformOrder();
-    }
-
-    public void preformOrder(){
-        new_order_page page = new new_order_page(driver);
-        preformOrder(products, page, logger);
-    }
-
-    public static void preformOrder(JSONArray products, new_order_page page, Logger logger) {
         for (Object product : products) {
             JSONObject obj = (JSONObject) product;
 
@@ -120,6 +78,7 @@ public class NewOrderTests {
             }
 
             String id = page.addProductToCart(name);
+            productId.add(id);
             page.addQuantityToCart(id, quantity);
 
             logger.debug("product added to cart",
@@ -128,17 +87,38 @@ public class NewOrderTests {
 
         logger.debug("finished adding products");
 
-        page.submitOrder();
+        return productId;
+    }
 
-        List<String> errors = page.getErrorsIfPresent();
-        if (!errors.isEmpty()) {
-            errors.forEach(error ->
-                    logger.error("website error: {}", error));
-            Assert.fail("Website validation errors:\n" + String.join("\n", errors));
+    @Test
+    public void removeItems() {
+        new_order_page page = new new_order_page(driver);
+        loadProductsFromJson("cart-remove.json");
+
+        List<String> productIds = addProductsToCart(page);
+
+        int rnd = ThreadLocalRandom.current().nextInt(0, productIds.size());
+        String productId = productIds.get(rnd);
+
+        logger.debug("removing product with id {} from cart", productId);
+        page.removeProductFromCart(productIds.get(rnd));
+
+        logger.debug("testing product is removed");
+
+        if(page.isProductInCart(productId)){
+            logger.error("product with id: {} wasn't removed",  productId);
+            Assert.fail("product is wasn't removed!");
         }
 
-        page.confirmOrder();
-        logger.info("confirmed order");
+        logger.info("product removed from cart");
+    }
 
+    @Test
+    public void removeWithEmptyCart(){
+        new_order_page page = new new_order_page(driver);
+        if(page.isCartEmpty()){
+            logger.error("Cart is empty couldn't remove items");
+            Assert.fail("cart is empty");
+        }
     }
 }

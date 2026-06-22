@@ -30,7 +30,10 @@ import java.util.Map;
 public class OrderHistoryTest {
     private WebDriver driver;
     private JSONArray products;
-    String downloadPath = "./downloads";
+
+    // Create a path reference
+    Path path = Path.of("downloads");
+    String downloadPath = path.toAbsolutePath().toString();
     Logger logger = LogManager.getLogger(OrderHistoryTest.class);
 
     public void loadProductsFromJson(String fileName) throws IOException, ParseException {
@@ -44,6 +47,9 @@ public class OrderHistoryTest {
 
     @Before
     public void setUp() {
+
+        logger.info("download path is: {}", downloadPath);
+
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("download.default_directory", downloadPath);
         prefs.put("download.prompt_for_download", false);

@@ -1,4 +1,4 @@
-package qa.orderflow;
+package qa.orderflow.Tests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
-import static qa.orderflow.NewOrderTests.preformOrder;
+import static qa.orderflow.Tests.NewOrderTests.preformOrder;
 
 public class CatalogFilterTest {
     private WebDriver driver;
