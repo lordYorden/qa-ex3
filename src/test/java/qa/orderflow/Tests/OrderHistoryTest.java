@@ -30,7 +30,7 @@ import java.util.Map;
 public class OrderHistoryTest {
     private WebDriver driver;
     private JSONArray products;
-    String downloadPath = "C:\\First Degree\\fourth year\\SemsterB\\QA\\qa3";
+    String downloadPath = "./downloads";
     Logger logger = LogManager.getLogger(OrderHistoryTest.class);
 
     public void loadProductsFromJson(String fileName) throws IOException, ParseException {
