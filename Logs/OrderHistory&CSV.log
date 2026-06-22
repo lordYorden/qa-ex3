@@ -1,0 +1,717 @@
+[INFO ] 2026-06-16 17:12:07.565 [main] OrderHistoryTest - Loading products from order-history-export-csv-without-orders.json
+[INFO ] 2026-06-16 17:12:07.588 [main] OrderHistoryTest - no orders to create from order-history-export-csv-without-orders.json
+[INFO ] 2026-06-16 17:12:09.893 [main] OrderHistoryTest - export csv is not available without orders
+[INFO ] 2026-06-16 17:12:26.824 [main] OrderHistoryTest - Loading products from order-history-export-csv-one-order.json
+[INFO ] 2026-06-16 17:12:28.169 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:12:34.445 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:12:34.450 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:12:35.264 [main] OrderHistoryTest - confirmed order 1 from 1
+[INFO ] 2026-06-16 17:12:35.264 [main] OrderHistoryTest - deleting old csv file order_history.csv
+[INFO ] 2026-06-16 17:12:36.244 [main] OrderHistoryTest - validating csv file order_history.csv matches json data
+[INFO ] 2026-06-16 17:12:36.246 [main] OrderHistoryTest - csv header is valid: "Order ID","Date","Status","Products","Total"
+[INFO ] 2026-06-16 17:12:36.248 [main] OrderHistoryTest - csv contains 1 order rows, json contains 1 products
+[INFO ] 2026-06-16 17:12:36.248 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:12:36.249 [main] OrderHistoryTest - matched csv row with json product: "1781619155249","2026-06-16 05:12:35","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:12:36.249 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:12:36.251 [main] OrderHistoryTest - csv validation completed successfully: matched 1 json orders with 1 csv rows
+[INFO ] 2026-06-16 17:12:36.251 [main] OrderHistoryTest - csv file exported successfully with one order
+[INFO ] 2026-06-16 17:12:52.983 [main] OrderHistoryTest - Loading products from order-history-export-csv-many-orders.json
+[INFO ] 2026-06-16 17:12:54.692 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:12:59.186 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:12:59.189 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:00.146 [main] OrderHistoryTest - confirmed order 1 from 99
+[INFO ] 2026-06-16 17:13:00.150 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:04.041 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:04.041 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:06.070 [main] OrderHistoryTest - confirmed order 2 from 99
+[INFO ] 2026-06-16 17:13:06.071 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:08.334 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:08.335 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:10.735 [main] OrderHistoryTest - confirmed order 3 from 99
+[INFO ] 2026-06-16 17:13:10.736 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:13.437 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:13.438 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:14.534 [main] OrderHistoryTest - confirmed order 4 from 99
+[INFO ] 2026-06-16 17:13:14.538 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:16.301 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:16.302 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:17.232 [main] OrderHistoryTest - confirmed order 5 from 99
+[INFO ] 2026-06-16 17:13:17.232 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:18.503 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:18.504 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:19.509 [main] OrderHistoryTest - confirmed order 6 from 99
+[INFO ] 2026-06-16 17:13:19.509 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:21.001 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:21.002 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:21.940 [main] OrderHistoryTest - confirmed order 7 from 99
+[INFO ] 2026-06-16 17:13:21.941 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:23.351 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:23.352 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:24.970 [main] OrderHistoryTest - confirmed order 8 from 99
+[INFO ] 2026-06-16 17:13:24.971 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:26.784 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:26.784 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:28.191 [main] OrderHistoryTest - confirmed order 9 from 99
+[INFO ] 2026-06-16 17:13:28.192 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:29.617 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:29.617 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:30.507 [main] OrderHistoryTest - confirmed order 10 from 99
+[INFO ] 2026-06-16 17:13:30.508 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:31.891 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:31.892 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:32.980 [main] OrderHistoryTest - confirmed order 11 from 99
+[INFO ] 2026-06-16 17:13:32.981 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:35.017 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:35.018 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:35.909 [main] OrderHistoryTest - confirmed order 12 from 99
+[INFO ] 2026-06-16 17:13:35.909 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:37.024 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:37.026 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:37.851 [main] OrderHistoryTest - confirmed order 13 from 99
+[INFO ] 2026-06-16 17:13:37.851 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:39.135 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:39.135 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:39.817 [main] OrderHistoryTest - confirmed order 14 from 99
+[INFO ] 2026-06-16 17:13:39.818 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:40.622 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:40.622 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:41.698 [main] OrderHistoryTest - confirmed order 15 from 99
+[INFO ] 2026-06-16 17:13:41.699 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:42.904 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:42.905 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:43.730 [main] OrderHistoryTest - confirmed order 16 from 99
+[INFO ] 2026-06-16 17:13:43.730 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:45.100 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:45.100 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:46.874 [main] OrderHistoryTest - confirmed order 17 from 99
+[INFO ] 2026-06-16 17:13:46.875 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:48.310 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:48.310 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:49.217 [main] OrderHistoryTest - confirmed order 18 from 99
+[INFO ] 2026-06-16 17:13:49.217 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:50.551 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:50.551 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:51.453 [main] OrderHistoryTest - confirmed order 19 from 99
+[INFO ] 2026-06-16 17:13:51.453 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:52.636 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:52.637 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:53.395 [main] OrderHistoryTest - confirmed order 20 from 99
+[INFO ] 2026-06-16 17:13:53.395 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:54.684 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:54.684 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:55.730 [main] OrderHistoryTest - confirmed order 21 from 99
+[INFO ] 2026-06-16 17:13:55.732 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:57.037 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:57.041 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:13:58.002 [main] OrderHistoryTest - confirmed order 22 from 99
+[INFO ] 2026-06-16 17:13:58.003 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:13:59.242 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:13:59.242 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:00.168 [main] OrderHistoryTest - confirmed order 23 from 99
+[INFO ] 2026-06-16 17:14:00.175 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:01.435 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:01.436 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:02.340 [main] OrderHistoryTest - confirmed order 24 from 99
+[INFO ] 2026-06-16 17:14:02.343 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:03.485 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:03.485 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:04.236 [main] OrderHistoryTest - confirmed order 25 from 99
+[INFO ] 2026-06-16 17:14:04.236 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:05.334 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:05.335 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:06.028 [main] OrderHistoryTest - confirmed order 26 from 99
+[INFO ] 2026-06-16 17:14:06.029 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:07.283 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:07.284 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:07.994 [main] OrderHistoryTest - confirmed order 27 from 99
+[INFO ] 2026-06-16 17:14:07.994 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:08.838 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:08.838 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:09.451 [main] OrderHistoryTest - confirmed order 28 from 99
+[INFO ] 2026-06-16 17:14:09.452 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:10.268 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:10.269 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:11.007 [main] OrderHistoryTest - confirmed order 29 from 99
+[INFO ] 2026-06-16 17:14:11.009 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:11.912 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:11.914 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:12.514 [main] OrderHistoryTest - confirmed order 30 from 99
+[INFO ] 2026-06-16 17:14:12.514 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:13.445 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:13.445 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:14.241 [main] OrderHistoryTest - confirmed order 31 from 99
+[INFO ] 2026-06-16 17:14:14.241 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:15.016 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:15.016 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:15.627 [main] OrderHistoryTest - confirmed order 32 from 99
+[INFO ] 2026-06-16 17:14:15.628 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:16.467 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:16.467 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:17.067 [main] OrderHistoryTest - confirmed order 33 from 99
+[INFO ] 2026-06-16 17:14:17.067 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:17.902 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:17.902 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:18.511 [main] OrderHistoryTest - confirmed order 34 from 99
+[INFO ] 2026-06-16 17:14:18.512 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:19.354 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:19.355 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:19.933 [main] OrderHistoryTest - confirmed order 35 from 99
+[INFO ] 2026-06-16 17:14:19.933 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:20.699 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:20.699 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:21.254 [main] OrderHistoryTest - confirmed order 36 from 99
+[INFO ] 2026-06-16 17:14:21.255 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:22.050 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:22.050 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:22.684 [main] OrderHistoryTest - confirmed order 37 from 99
+[INFO ] 2026-06-16 17:14:22.684 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:23.568 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:23.568 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:24.110 [main] OrderHistoryTest - confirmed order 38 from 99
+[INFO ] 2026-06-16 17:14:24.111 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:24.990 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:24.991 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:25.564 [main] OrderHistoryTest - confirmed order 39 from 99
+[INFO ] 2026-06-16 17:14:25.564 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:26.295 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:26.295 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:26.830 [main] OrderHistoryTest - confirmed order 40 from 99
+[INFO ] 2026-06-16 17:14:26.831 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:27.768 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:27.769 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:28.320 [main] OrderHistoryTest - confirmed order 41 from 99
+[INFO ] 2026-06-16 17:14:28.321 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:29.032 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:29.032 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:29.819 [main] OrderHistoryTest - confirmed order 42 from 99
+[INFO ] 2026-06-16 17:14:29.821 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:30.587 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:30.589 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:31.137 [main] OrderHistoryTest - confirmed order 43 from 99
+[INFO ] 2026-06-16 17:14:31.137 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:32.030 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:32.030 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:32.719 [main] OrderHistoryTest - confirmed order 44 from 99
+[INFO ] 2026-06-16 17:14:32.721 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:33.716 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:33.716 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:34.448 [main] OrderHistoryTest - confirmed order 45 from 99
+[INFO ] 2026-06-16 17:14:34.449 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:35.350 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:35.351 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:36.050 [main] OrderHistoryTest - confirmed order 46 from 99
+[INFO ] 2026-06-16 17:14:36.050 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:37.085 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:37.086 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:37.706 [main] OrderHistoryTest - confirmed order 47 from 99
+[INFO ] 2026-06-16 17:14:37.706 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:38.427 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:38.428 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:39.248 [main] OrderHistoryTest - confirmed order 48 from 99
+[INFO ] 2026-06-16 17:14:39.249 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:40.516 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:40.516 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:41.121 [main] OrderHistoryTest - confirmed order 49 from 99
+[INFO ] 2026-06-16 17:14:41.121 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:41.817 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:41.817 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:42.285 [main] OrderHistoryTest - confirmed order 50 from 99
+[INFO ] 2026-06-16 17:14:42.285 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:42.883 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:42.883 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:43.360 [main] OrderHistoryTest - confirmed order 51 from 99
+[INFO ] 2026-06-16 17:14:43.360 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:43.962 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:43.962 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:44.400 [main] OrderHistoryTest - confirmed order 52 from 99
+[INFO ] 2026-06-16 17:14:44.400 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:45.011 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:45.011 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:45.461 [main] OrderHistoryTest - confirmed order 53 from 99
+[INFO ] 2026-06-16 17:14:45.462 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:46.150 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:46.150 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:46.619 [main] OrderHistoryTest - confirmed order 54 from 99
+[INFO ] 2026-06-16 17:14:46.619 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:47.350 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:47.350 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:47.944 [main] OrderHistoryTest - confirmed order 55 from 99
+[INFO ] 2026-06-16 17:14:47.944 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:48.685 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:48.685 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:49.195 [main] OrderHistoryTest - confirmed order 56 from 99
+[INFO ] 2026-06-16 17:14:49.196 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:49.751 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:49.751 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:50.236 [main] OrderHistoryTest - confirmed order 57 from 99
+[INFO ] 2026-06-16 17:14:50.236 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:50.927 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:50.927 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:51.431 [main] OrderHistoryTest - confirmed order 58 from 99
+[INFO ] 2026-06-16 17:14:51.431 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:52.313 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:52.314 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:52.879 [main] OrderHistoryTest - confirmed order 59 from 99
+[INFO ] 2026-06-16 17:14:52.879 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:53.630 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:53.630 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:54.159 [main] OrderHistoryTest - confirmed order 60 from 99
+[INFO ] 2026-06-16 17:14:54.159 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:54.881 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:54.881 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:55.564 [main] OrderHistoryTest - confirmed order 61 from 99
+[INFO ] 2026-06-16 17:14:55.564 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:56.558 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:56.558 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:57.170 [main] OrderHistoryTest - confirmed order 62 from 99
+[INFO ] 2026-06-16 17:14:57.170 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:57.967 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:57.967 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:14:58.698 [main] OrderHistoryTest - confirmed order 63 from 99
+[INFO ] 2026-06-16 17:14:58.698 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:14:59.648 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:14:59.648 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:00.344 [main] OrderHistoryTest - confirmed order 64 from 99
+[INFO ] 2026-06-16 17:15:00.347 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:01.129 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:01.129 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:01.783 [main] OrderHistoryTest - confirmed order 65 from 99
+[INFO ] 2026-06-16 17:15:01.783 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:02.580 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:02.580 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:03.172 [main] OrderHistoryTest - confirmed order 66 from 99
+[INFO ] 2026-06-16 17:15:03.173 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:03.920 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:03.920 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:04.515 [main] OrderHistoryTest - confirmed order 67 from 99
+[INFO ] 2026-06-16 17:15:04.516 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:05.367 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:05.367 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:06.013 [main] OrderHistoryTest - confirmed order 68 from 99
+[INFO ] 2026-06-16 17:15:06.013 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:06.765 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:06.765 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:07.402 [main] OrderHistoryTest - confirmed order 69 from 99
+[INFO ] 2026-06-16 17:15:07.402 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:08.234 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:08.235 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:08.794 [main] OrderHistoryTest - confirmed order 70 from 99
+[INFO ] 2026-06-16 17:15:08.794 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:09.499 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:09.499 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:09.999 [main] OrderHistoryTest - confirmed order 71 from 99
+[INFO ] 2026-06-16 17:15:09.999 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:10.661 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:10.661 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:11.311 [main] OrderHistoryTest - confirmed order 72 from 99
+[INFO ] 2026-06-16 17:15:11.311 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:12.018 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:12.018 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:12.495 [main] OrderHistoryTest - confirmed order 73 from 99
+[INFO ] 2026-06-16 17:15:12.497 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:13.146 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:13.147 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:13.660 [main] OrderHistoryTest - confirmed order 74 from 99
+[INFO ] 2026-06-16 17:15:13.660 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:14.318 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:14.318 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:14.841 [main] OrderHistoryTest - confirmed order 75 from 99
+[INFO ] 2026-06-16 17:15:14.841 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:15.479 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:15.479 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:16.030 [main] OrderHistoryTest - confirmed order 76 from 99
+[INFO ] 2026-06-16 17:15:16.030 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:16.731 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:16.731 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:17.281 [main] OrderHistoryTest - confirmed order 77 from 99
+[INFO ] 2026-06-16 17:15:17.281 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:17.877 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:17.877 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:18.326 [main] OrderHistoryTest - confirmed order 78 from 99
+[INFO ] 2026-06-16 17:15:18.326 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:18.848 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:18.848 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:19.230 [main] OrderHistoryTest - confirmed order 79 from 99
+[INFO ] 2026-06-16 17:15:19.231 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:19.880 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:19.881 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:20.360 [main] OrderHistoryTest - confirmed order 80 from 99
+[INFO ] 2026-06-16 17:15:20.360 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:20.977 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:20.977 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:21.443 [main] OrderHistoryTest - confirmed order 81 from 99
+[INFO ] 2026-06-16 17:15:21.443 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:21.993 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:21.993 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:22.416 [main] OrderHistoryTest - confirmed order 82 from 99
+[INFO ] 2026-06-16 17:15:22.416 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:22.998 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:22.998 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:23.485 [main] OrderHistoryTest - confirmed order 83 from 99
+[INFO ] 2026-06-16 17:15:23.485 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:24.126 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:24.127 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:24.616 [main] OrderHistoryTest - confirmed order 84 from 99
+[INFO ] 2026-06-16 17:15:24.616 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:25.301 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:25.301 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:25.776 [main] OrderHistoryTest - confirmed order 85 from 99
+[INFO ] 2026-06-16 17:15:25.776 [main] OrderHistoryTest - adding product Beef Steak (1)
+[DEBUG] 2026-06-16 17:15:26.326 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:26.326 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:26.801 [main] OrderHistoryTest - confirmed order 86 from 99
+[INFO ] 2026-06-16 17:15:26.802 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:27.457 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:27.458 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:27.917 [main] OrderHistoryTest - confirmed order 87 from 99
+[INFO ] 2026-06-16 17:15:27.917 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:28.409 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:28.409 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:29.207 [main] OrderHistoryTest - confirmed order 88 from 99
+[INFO ] 2026-06-16 17:15:29.207 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:29.599 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:29.599 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:29.998 [main] OrderHistoryTest - confirmed order 89 from 99
+[INFO ] 2026-06-16 17:15:29.998 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:30.466 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:30.466 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:30.840 [main] OrderHistoryTest - confirmed order 90 from 99
+[INFO ] 2026-06-16 17:15:30.840 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:31.298 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:31.299 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:31.712 [main] OrderHistoryTest - confirmed order 91 from 99
+[INFO ] 2026-06-16 17:15:31.713 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:32.292 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:32.292 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:32.733 [main] OrderHistoryTest - confirmed order 92 from 99
+[INFO ] 2026-06-16 17:15:32.733 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:33.456 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:33.456 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:33.912 [main] OrderHistoryTest - confirmed order 93 from 99
+[INFO ] 2026-06-16 17:15:33.912 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:34.392 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:34.392 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:34.842 [main] OrderHistoryTest - confirmed order 94 from 99
+[INFO ] 2026-06-16 17:15:34.842 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:35.449 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:35.449 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:35.902 [main] OrderHistoryTest - confirmed order 95 from 99
+[INFO ] 2026-06-16 17:15:35.902 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:36.478 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:36.478 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:36.963 [main] OrderHistoryTest - confirmed order 96 from 99
+[INFO ] 2026-06-16 17:15:36.963 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:37.642 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:37.642 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:38.134 [main] OrderHistoryTest - confirmed order 97 from 99
+[INFO ] 2026-06-16 17:15:38.134 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:38.684 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:38.685 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:39.147 [main] OrderHistoryTest - confirmed order 98 from 99
+[INFO ] 2026-06-16 17:15:39.147 [main] OrderHistoryTest - adding product Chicken Meat (1)
+[DEBUG] 2026-06-16 17:15:39.792 [main] OrderHistoryTest - product added to cart
+[DEBUG] 2026-06-16 17:15:39.792 [main] OrderHistoryTest - finished adding products
+[INFO ] 2026-06-16 17:15:40.349 [main] OrderHistoryTest - confirmed order 99 from 99
+[INFO ] 2026-06-16 17:15:40.359 [main] OrderHistoryTest - deleting old csv file order_history.csv
+[INFO ] 2026-06-16 17:15:41.644 [main] OrderHistoryTest - validating csv file order_history.csv matches json data
+[INFO ] 2026-06-16 17:15:41.657 [main] OrderHistoryTest - csv header is valid: "Order ID","Date","Status","Products","Total"
+[INFO ] 2026-06-16 17:15:41.658 [main] OrderHistoryTest - csv contains 99 order rows, json contains 99 products
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.664 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.665 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.666 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.667 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.668 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.669 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - expected product from json: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.670 [main] OrderHistoryTest - matched csv row with json product: "1781619180120","2026-06-16 05:13:00","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - matched csv row with json product: "1781619186036","2026-06-16 05:13:06","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - matched csv row with json product: "1781619190687","2026-06-16 05:13:10","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - matched csv row with json product: "1781619194510","2026-06-16 05:13:14","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.671 [main] OrderHistoryTest - matched csv row with json product: "1781619197205","2026-06-16 05:13:17","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619199487","2026-06-16 05:13:19","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619201917","2026-06-16 05:13:21","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619204949","2026-06-16 05:13:24","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619208170","2026-06-16 05:13:28","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619210464","2026-06-16 05:13:30","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619212946","2026-06-16 05:13:32","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619215899","2026-06-16 05:13:35","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619217834","2026-06-16 05:13:37","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - matched csv row with json product: "1781619219800","2026-06-16 05:13:39","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.672 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - matched csv row with json product: "1781619221683","2026-06-16 05:13:41","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - matched csv row with json product: "1781619223710","2026-06-16 05:13:43","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - matched csv row with json product: "1781619226846","2026-06-16 05:13:46","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - matched csv row with json product: "1781619229192","2026-06-16 05:13:49","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - matched csv row with json product: "1781619231442","2026-06-16 05:13:51","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.673 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619233380","2026-06-16 05:13:53","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619235702","2026-06-16 05:13:55","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619237983","2026-06-16 05:13:57","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619240150","2026-06-16 05:14:00","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619242314","2026-06-16 05:14:02","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619244217","2026-06-16 05:14:04","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619246022","2026-06-16 05:14:06","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619247978","2026-06-16 05:14:07","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619249436","2026-06-16 05:14:09","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619250990","2026-06-16 05:14:10","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - matched csv row with json product: "1781619252498","2026-06-16 05:14:12","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.674 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - matched csv row with json product: "1781619254226","2026-06-16 05:14:14","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - matched csv row with json product: "1781619255608","2026-06-16 05:14:15","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - matched csv row with json product: "1781619257054","2026-06-16 05:14:17","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - matched csv row with json product: "1781619258494","2026-06-16 05:14:18","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.675 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619259918","2026-06-16 05:14:19","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619261243","2026-06-16 05:14:21","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619262665","2026-06-16 05:14:22","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619264094","2026-06-16 05:14:24","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619265551","2026-06-16 05:14:25","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619266814","2026-06-16 05:14:26","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619268313","2026-06-16 05:14:28","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619269804","2026-06-16 05:14:29","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619271121","2026-06-16 05:14:31","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619272697","2026-06-16 05:14:32","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - matched csv row with json product: "1781619274427","2026-06-16 05:14:34","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.676 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - matched csv row with json product: "1781619276035","2026-06-16 05:14:36","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - matched csv row with json product: "1781619277688","2026-06-16 05:14:37","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - matched csv row with json product: "1781619279233","2026-06-16 05:14:39","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - matched csv row with json product: "1781619281100","2026-06-16 05:14:41","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.677 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619282272","2026-06-16 05:14:42","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619283339","2026-06-16 05:14:43","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619284385","2026-06-16 05:14:44","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619285447","2026-06-16 05:14:45","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619286602","2026-06-16 05:14:46","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619287920","2026-06-16 05:14:47","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619289173","2026-06-16 05:14:49","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.678 [main] OrderHistoryTest - matched csv row with json product: "1781619290217","2026-06-16 05:14:50","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619291415","2026-06-16 05:14:51","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619292863","2026-06-16 05:14:52","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619294145","2026-06-16 05:14:54","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619295535","2026-06-16 05:14:55","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619297145","2026-06-16 05:14:57","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619298674","2026-06-16 05:14:58","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619300320","2026-06-16 05:15:00","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619301764","2026-06-16 05:15:01","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619303152","2026-06-16 05:15:03","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619304493","2026-06-16 05:15:04","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619305996","2026-06-16 05:15:05","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619307379","2026-06-16 05:15:07","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - matched csv row with json product: "1781619308780","2026-06-16 05:15:08","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.679 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - matched csv row with json product: "1781619309991","2026-06-16 05:15:09","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - matched csv row with json product: "1781619311293","2026-06-16 05:15:11","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - matched csv row with json product: "1781619312481","2026-06-16 05:15:12","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.680 [main] OrderHistoryTest - matched csv row with json product: "1781619313635","2026-06-16 05:15:13","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619314828","2026-06-16 05:15:14","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619316015","2026-06-16 05:15:16","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619317264","2026-06-16 05:15:17","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619318311","2026-06-16 05:15:18","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619319217","2026-06-16 05:15:19","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619320340","2026-06-16 05:15:20","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619321429","2026-06-16 05:15:21","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619322408","2026-06-16 05:15:22","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619323472","2026-06-16 05:15:23","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619324609","2026-06-16 05:15:24","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619325759","2026-06-16 05:15:25","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619326782","2026-06-16 05:15:26","Confirmed","Beef Steak x1","12.99"
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - csv product matches json product: Beef Steak x1
+[INFO ] 2026-06-16 17:15:41.681 [main] OrderHistoryTest - matched csv row with json product: "1781619327903","2026-06-16 05:15:27","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619329201","2026-06-16 05:15:29","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619329987","2026-06-16 05:15:29","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619330826","2026-06-16 05:15:30","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619331701","2026-06-16 05:15:31","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619332726","2026-06-16 05:15:32","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619333899","2026-06-16 05:15:33","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.682 [main] OrderHistoryTest - matched csv row with json product: "1781619334827","2026-06-16 05:15:34","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - matched csv row with json product: "1781619335894","2026-06-16 05:15:35","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - matched csv row with json product: "1781619336947","2026-06-16 05:15:36","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - matched csv row with json product: "1781619338121","2026-06-16 05:15:38","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - matched csv row with json product: "1781619339128","2026-06-16 05:15:39","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - matched csv row with json product: "1781619340333","2026-06-16 05:15:40","Confirmed","Chicken Meat x1","9.99"
+[INFO ] 2026-06-16 17:15:41.683 [main] OrderHistoryTest - csv product matches json product: Chicken Meat x1
+[INFO ] 2026-06-16 17:15:41.684 [main] OrderHistoryTest - csv validation completed successfully: matched 99 json orders with 99 csv rows
+[INFO ] 2026-06-16 17:15:41.684 [main] OrderHistoryTest - csv file exported successfully with many orders

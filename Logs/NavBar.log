@@ -1,0 +1,65 @@
+[INFO ] 2026-06-22 15:19:07.898 [main] NavigationBarTest - Loading navigation steps from navigation-bar.json
+[INFO ] 2026-06-22 15:19:07.938 [main] NavigationBarTest - starting navigation step: from Home to Home
+[INFO ] 2026-06-22 15:19:11.693 [main] NavigationBarTest - current page before click: /
+[INFO ] 2026-06-22 15:19:13.914 [main] NavigationBarTest - current page after click: /
+[INFO ] 2026-06-22 15:19:13.914 [main] NavigationBarTest - navigation button kept user on the same page: /
+[INFO ] 2026-06-22 15:19:13.914 [main] NavigationBarTest - starting navigation step: from Home to New Order
+[INFO ] 2026-06-22 15:19:16.478 [main] NavigationBarTest - current page before click: /
+[INFO ] 2026-06-22 15:19:18.604 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 15:19:18.605 [main] NavigationBarTest - navigation from / to /order completed successfully
+[INFO ] 2026-06-22 15:19:18.605 [main] NavigationBarTest - starting navigation step: from Home to Order History
+[INFO ] 2026-06-22 15:19:21.011 [main] NavigationBarTest - current page before click: /
+[INFO ] 2026-06-22 15:19:23.131 [main] NavigationBarTest - current page after click: /history
+[INFO ] 2026-06-22 15:19:23.131 [main] NavigationBarTest - navigation from / to /history completed successfully
+[INFO ] 2026-06-22 15:19:23.132 [main] NavigationBarTest - starting navigation step: from Home to Returns
+[INFO ] 2026-06-22 15:19:25.537 [main] NavigationBarTest - current page before click: /
+[INFO ] 2026-06-22 15:19:27.659 [main] NavigationBarTest - current page after click: /returns
+[INFO ] 2026-06-22 15:19:27.660 [main] NavigationBarTest - navigation from / to /returns completed successfully
+[INFO ] 2026-06-22 15:19:27.660 [main] NavigationBarTest - starting navigation step: from New Order to Home
+[INFO ] 2026-06-22 15:19:30.585 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 15:19:32.766 [main] NavigationBarTest - current page after click: /
+[INFO ] 2026-06-22 15:19:32.766 [main] NavigationBarTest - navigation from /order to / completed successfully
+[INFO ] 2026-06-22 15:19:32.766 [main] NavigationBarTest - starting navigation step: from New Order to New Order
+[INFO ] 2026-06-22 15:19:35.267 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 15:19:37.400 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 15:19:37.400 [main] NavigationBarTest - navigation button kept user on the same page: /order
+[INFO ] 2026-06-22 15:19:37.400 [main] NavigationBarTest - starting navigation step: from New Order to Order History
+[INFO ] 2026-06-22 15:19:39.844 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 15:19:41.937 [main] NavigationBarTest - current page after click: /history
+[INFO ] 2026-06-22 15:19:41.937 [main] NavigationBarTest - navigation from /order to /history completed successfully
+[INFO ] 2026-06-22 15:19:41.937 [main] NavigationBarTest - starting navigation step: from New Order to Returns
+[INFO ] 2026-06-22 15:19:44.314 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 15:19:46.422 [main] NavigationBarTest - current page after click: /returns
+[INFO ] 2026-06-22 15:19:46.423 [main] NavigationBarTest - navigation from /order to /returns completed successfully
+[INFO ] 2026-06-22 15:19:46.423 [main] NavigationBarTest - starting navigation step: from Order History to Home
+[INFO ] 2026-06-22 15:19:48.875 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 15:19:50.962 [main] NavigationBarTest - current page after click: /
+[INFO ] 2026-06-22 15:19:50.962 [main] NavigationBarTest - navigation from /history to / completed successfully
+[INFO ] 2026-06-22 15:19:50.962 [main] NavigationBarTest - starting navigation step: from Order History to New Order
+[INFO ] 2026-06-22 15:19:53.497 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 15:19:55.577 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 15:19:55.578 [main] NavigationBarTest - navigation from /history to /order completed successfully
+[INFO ] 2026-06-22 15:19:55.578 [main] NavigationBarTest - starting navigation step: from Order History to Order History
+[INFO ] 2026-06-22 15:19:58.198 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 15:20:00.272 [main] NavigationBarTest - current page after click: /history
+[INFO ] 2026-06-22 15:20:00.273 [main] NavigationBarTest - navigation button kept user on the same page: /history
+[INFO ] 2026-06-22 15:20:00.273 [main] NavigationBarTest - starting navigation step: from Order History to Returns
+[INFO ] 2026-06-22 15:20:02.673 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 15:20:04.815 [main] NavigationBarTest - current page after click: /returns
+[INFO ] 2026-06-22 15:20:04.816 [main] NavigationBarTest - navigation from /history to /returns completed successfully
+[INFO ] 2026-06-22 15:20:04.816 [main] NavigationBarTest - starting navigation step: from Returns to Home
+[INFO ] 2026-06-22 15:20:07.221 [main] NavigationBarTest - current page before click: /returns
+[INFO ] 2026-06-22 15:20:09.537 [main] NavigationBarTest - current page after click: /
+[INFO ] 2026-06-22 15:20:09.539 [main] NavigationBarTest - navigation from /returns to / completed successfully
+[INFO ] 2026-06-22 15:20:09.540 [main] NavigationBarTest - starting navigation step: from Returns to New Order
+[INFO ] 2026-06-22 15:20:12.228 [main] NavigationBarTest - current page before click: /returns
+[INFO ] 2026-06-22 15:20:15.353 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 15:20:15.354 [main] NavigationBarTest - navigation from /returns to /order completed successfully
+[INFO ] 2026-06-22 15:20:15.354 [main] NavigationBarTest - starting navigation step: from Returns to Order History
+[INFO ] 2026-06-22 15:20:17.768 [main] NavigationBarTest - current page before click: /returns
+[INFO ] 2026-06-22 15:20:19.851 [main] NavigationBarTest - current page after click: /history
+[INFO ] 2026-06-22 15:20:19.851 [main] NavigationBarTest - navigation from /returns to /history completed successfully
+[INFO ] 2026-06-22 15:20:19.851 [main] NavigationBarTest - starting navigation step: from Returns to Returns
+[INFO ] 2026-06-22 15:20:23.885 [main] NavigationBarTest - current page before click: /returns
+[INFO ] 2026-06-22 15:20:25.987 [main] NavigationBarTest - current page after click: /returns
+[INFO ] 2026-06-22 15:20:25.987 [main] NavigationBarTest - navigation button kept user on the same page: /returns
