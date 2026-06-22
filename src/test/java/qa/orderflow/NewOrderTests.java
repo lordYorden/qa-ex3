@@ -38,7 +38,6 @@ public class NewOrderTests {
             logger.error("Error loading products from {}\nwith error: {}",
                     fileName, e);
         }
-
     }
 
     @Before
@@ -97,9 +96,12 @@ public class NewOrderTests {
         preformOrder();
     }
 
-    public void preformOrder() {
+    public void preformOrder(){
         new_order_page page = new new_order_page(driver);
+        preformOrder(products, page, logger);
+    }
 
+    public static void preformOrder(JSONArray products, new_order_page page, Logger logger) {
         for (Object product : products) {
             JSONObject obj = (JSONObject) product;
 

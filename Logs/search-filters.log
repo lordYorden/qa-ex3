@@ -1,0 +1,21 @@
+[INFO ] 2026-06-22 16:02:32.679 [main] CatalogFilterTest - Loading queries from search-stock.json
+[INFO ] 2026-06-22 16:02:33.795 [main] CatalogFilterTest - Loading products from order-sold-out.json
+[INFO ] 2026-06-22 16:02:33.796 [main] CatalogFilterTest - adding product Apple (8)
+[DEBUG] 2026-06-22 16:02:36.156 [main] CatalogFilterTest - product added to cart
+[DEBUG] 2026-06-22 16:02:36.158 [main] CatalogFilterTest - finished adding products
+[INFO ] 2026-06-22 16:02:37.302 [main] CatalogFilterTest - confirmed order
+[INFO ] 2026-06-22 16:02:37.950 [main] CatalogFilterTest - searching for apple in category Groceries
+[DEBUG] 2026-06-22 16:02:38.100 [main] CatalogFilterTest - searching only products in stock only
+[ERROR] 2026-06-22 16:02:38.161 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 16:02:39.557 [main] CatalogFilterTest - Loading queries from search-apple.json
+[INFO ] 2026-06-22 16:02:42.891 [main] CatalogFilterTest - searching for apple in category Groceries
+[INFO ] 2026-06-22 16:02:53.378 [main] CatalogFilterTest - items were found
+[INFO ] 2026-06-22 16:02:53.731 [main] CatalogFilterTest - searching for toyota in category Groceries
+[ERROR] 2026-06-22 16:02:53.774 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 16:02:55.223 [main] CatalogFilterTest - Loading queries from search-range.json
+[INFO ] 2026-06-22 16:02:57.644 [main] CatalogFilterTest - searching for  in category Laptops
+[DEBUG] 2026-06-22 16:02:57.910 [main] CatalogFilterTest - price rage is set to 0-2$
+[ERROR] 2026-06-22 16:02:57.932 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 16:02:58.149 [main] CatalogFilterTest - searching for  in category Laptops
+[DEBUG] 2026-06-22 16:02:58.231 [main] CatalogFilterTest - price rage is set to 0-600$
+[INFO ] 2026-06-22 16:03:08.508 [main] CatalogFilterTest - items were found

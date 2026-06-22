@@ -31,6 +31,12 @@ public class new_order_page {
 
     By validationDialog = By.id("validation-dialog");
 
+    By search = By.id("product-search");
+    By stock_toggle = By.id("in-stock-toggle");
+    By price_slider = By.id("price-range-slider");
+    By price_label = By.id("price-range-label");
+    By empty = By.id("products-empty");
+
     By errorMsg = By.cssSelector("#validation-errors p[id^='validation-error-']");
 
     By emptyCart = By.xpath("//*[normalize-space(.)='No products selected yet. Browse and add products above.']");
@@ -39,7 +45,10 @@ public class new_order_page {
         WebElement categoryDropdown = wait.until(ExpectedConditions.elementToBeClickable(catSelect));
         Select drpCat = new Select(categoryDropdown);
         drpCat.selectByVisibleText(category);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("product-grid")));
+        wait.until(ExpectedConditions.or(
+                ExpectedConditions.presenceOfElementLocated(By.id("product-grid")),
+                ExpectedConditions.presenceOfElementLocated(empty)
+        ));
     }
 
     public String addProductToCart(String name){
@@ -95,6 +104,50 @@ public class new_order_page {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public boolean isCatalogEmpty(){
+        try {
+            WebElement msg = wait.until(ExpectedConditions.presenceOfElementLocated(empty));
+            return msg.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public void searchCatalog(String searchTerm) {
+        WebElement input = wait.until(
+                ExpectedConditions.presenceOfElementLocated(search));
+        input.sendKeys(Keys.CONTROL + "a");
+        input.sendKeys(String.valueOf(searchTerm));
+    }
+
+    public void toggleStock() {
+        WebElement input = wait.until(
+                ExpectedConditions.presenceOfElementLocated(stock_toggle));
+        input.click();
+    }
+
+    public void setPrice(int price) {
+        WebElement input = wait.until(
+                ExpectedConditions.elementToBeClickable(price_slider));
+
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});" +
+                        "const nativeInputValueSetter = Object.getOwnPropertyDescriptor(" +
+                        "HTMLInputElement.prototype, 'value').set;" +
+                        "nativeInputValueSetter.call(arguments[0], arguments[1]);" +
+                        "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));" +
+                        "arguments[0].dispatchEvent(new Event('change', { bubbles: true }));" +
+                        "arguments[0].blur();",
+                input,
+                String.valueOf(price)
+        );
+
+        wait.until(ExpectedConditions.attributeToBe(input, "value", String.valueOf(price)));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(price_label, "$" + price));
+
+        ((JavascriptExecutor) driver).executeScript("document.body.focus();");
     }
 
     public void submitOrder(){
@@ -155,6 +208,4 @@ public class new_order_page {
         xpath.append(")");
         return xpath.toString();
     }
-
-
 }
