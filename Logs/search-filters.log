@@ -1,21 +1,35 @@
-[INFO ] 2026-06-22 16:02:32.679 [main] CatalogFilterTest - Loading queries from search-stock.json
-[INFO ] 2026-06-22 16:02:33.795 [main] CatalogFilterTest - Loading products from order-sold-out.json
-[INFO ] 2026-06-22 16:02:33.796 [main] CatalogFilterTest - adding product Apple (8)
-[DEBUG] 2026-06-22 16:02:36.156 [main] CatalogFilterTest - product added to cart
-[DEBUG] 2026-06-22 16:02:36.158 [main] CatalogFilterTest - finished adding products
-[INFO ] 2026-06-22 16:02:37.302 [main] CatalogFilterTest - confirmed order
-[INFO ] 2026-06-22 16:02:37.950 [main] CatalogFilterTest - searching for apple in category Groceries
-[DEBUG] 2026-06-22 16:02:38.100 [main] CatalogFilterTest - searching only products in stock only
-[ERROR] 2026-06-22 16:02:38.161 [main] CatalogFilterTest - no items were found
-[INFO ] 2026-06-22 16:02:39.557 [main] CatalogFilterTest - Loading queries from search-apple.json
-[INFO ] 2026-06-22 16:02:42.891 [main] CatalogFilterTest - searching for apple in category Groceries
-[INFO ] 2026-06-22 16:02:53.378 [main] CatalogFilterTest - items were found
-[INFO ] 2026-06-22 16:02:53.731 [main] CatalogFilterTest - searching for toyota in category Groceries
-[ERROR] 2026-06-22 16:02:53.774 [main] CatalogFilterTest - no items were found
-[INFO ] 2026-06-22 16:02:55.223 [main] CatalogFilterTest - Loading queries from search-range.json
-[INFO ] 2026-06-22 16:02:57.644 [main] CatalogFilterTest - searching for  in category Laptops
-[DEBUG] 2026-06-22 16:02:57.910 [main] CatalogFilterTest - price rage is set to 0-2$
-[ERROR] 2026-06-22 16:02:57.932 [main] CatalogFilterTest - no items were found
-[INFO ] 2026-06-22 16:02:58.149 [main] CatalogFilterTest - searching for  in category Laptops
-[DEBUG] 2026-06-22 16:02:58.231 [main] CatalogFilterTest - price rage is set to 0-600$
-[INFO ] 2026-06-22 16:03:08.508 [main] CatalogFilterTest - items were found
+[INFO ] 2026-06-22 17:29:53.762 [main] CatalogFilterTest - Loading queries from search-stock.json
+[INFO ] 2026-06-22 17:29:54.319 [main] CatalogFilterTest - Loading products from order-sold-out.json
+[INFO ] 2026-06-22 17:29:54.322 [main] CatalogFilterTest - adding product Apple (8)
+[DEBUG] 2026-06-22 17:29:59.238 [main] CatalogFilterTest - product added to cart
+[DEBUG] 2026-06-22 17:29:59.242 [main] CatalogFilterTest - finished adding products
+[INFO ] 2026-06-22 17:29:59.904 [main] CatalogFilterTest - confirmed order
+[INFO ] 2026-06-22 17:30:00.439 [main] CatalogFilterTest - searching for apple in category Groceries
+[DEBUG] 2026-06-22 17:30:00.556 [main] CatalogFilterTest - searching only products in stock only
+[ERROR] 2026-06-22 17:30:00.600 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 17:30:02.543 [main] CatalogFilterTest - Loading queries from search-apple.json
+[INFO ] 2026-06-22 17:30:05.423 [main] CatalogFilterTest - searching for apple in category Groceries
+[INFO ] 2026-06-22 17:30:15.899 [main] CatalogFilterTest - items were found
+[INFO ] 2026-06-22 17:30:16.921 [main] CatalogFilterTest - searching for toyota in category Groceries
+[ERROR] 2026-06-22 17:30:16.973 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 17:30:20.555 [main] CatalogFilterTest - Loading queries from search-api-category.json
+[INFO ] 2026-06-22 17:30:22.367 [main] CatalogFilterTest - checking category Groceries
+[INFO ] 2026-06-22 17:30:23.921 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/groceries?limit=10
+[INFO ] 2026-06-22 17:30:27.326 [main] CatalogFilterTest - checking category Laptops
+[INFO ] 2026-06-22 17:30:27.326 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/laptops?limit=10
+[ERROR] 2026-06-22 17:30:27.497 [main] CatalogFilterTest - api for category laptops returned a Apple MacBook Pro 14 Inch Space Grey which doesn't exist on the site
+[INFO ] 2026-06-22 17:30:28.212 [main] CatalogFilterTest - checking category Furniture
+[INFO ] 2026-06-22 17:30:28.212 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/furniture?limit=10
+[INFO ] 2026-06-22 17:30:29.322 [main] CatalogFilterTest - checking category Mobile Accessories
+[INFO ] 2026-06-22 17:30:29.322 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/mobile-accessories?limit=10
+[INFO ] 2026-06-22 17:30:30.501 [main] CatalogFilterTest - checking category Smartphones
+[INFO ] 2026-06-22 17:30:30.501 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/smartphones?limit=10
+[INFO ] 2026-06-22 17:30:31.632 [main] CatalogFilterTest - checking category Sports Accessories
+[INFO ] 2026-06-22 17:30:31.632 [main] CatalogFilterTest - fetching products from https://dummyjson.com/products/category/sports-accessories?limit=10
+[INFO ] 2026-06-22 17:30:34.096 [main] CatalogFilterTest - Loading queries from search-range.json
+[INFO ] 2026-06-22 17:30:36.877 [main] CatalogFilterTest - searching for  in category Laptops
+[DEBUG] 2026-06-22 17:30:37.023 [main] CatalogFilterTest - price rage is set to 0-2$
+[ERROR] 2026-06-22 17:30:37.045 [main] CatalogFilterTest - no items were found
+[INFO ] 2026-06-22 17:30:37.309 [main] CatalogFilterTest - searching for  in category Laptops
+[DEBUG] 2026-06-22 17:30:37.400 [main] CatalogFilterTest - price rage is set to 0-600$
+[INFO ] 2026-06-22 17:30:47.735 [main] CatalogFilterTest - items were found

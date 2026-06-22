@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Groceries",
+    "api-category": "groceries"
+  },
+  {
+    "category": "Laptops",
+    "api-category": "laptops"
+  },
+  {
+    "category": "Furniture",
+    "api-category": "furniture"
+  },
+  {
+    "category": "Mobile Accessories",
+    "api-category": "mobile-accessories"
+  },
+  {
+    "category": "Smartphones",
+    "api-category": "smartphones"
+  },
+  {
+    "category": "Sports Accessories",
+    "api-category": "sports-accessories"
+  }
+]

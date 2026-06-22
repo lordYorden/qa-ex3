@@ -128,6 +128,18 @@ public class new_order_page {
         input.click();
     }
 
+    public boolean isProductInCatalog(int id, String title) {
+        try {
+            By cardId = By.id("product-card-" + id);
+            WebElement productCard = driver.findElement(cardId);
+
+            //TODO: add a check for matching title as well
+            return productCard.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     public void setPrice(int price) {
         WebElement input = wait.until(
                 ExpectedConditions.elementToBeClickable(price_slider));

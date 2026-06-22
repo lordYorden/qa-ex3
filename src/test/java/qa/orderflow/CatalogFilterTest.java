@@ -1,5 +1,7 @@
 package qa.orderflow;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
@@ -16,6 +18,8 @@ import qa.orderflow.pages.new_order_page;
 import java.io.FileReader;
 import java.io.IOException;
 
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
 import static qa.orderflow.NewOrderTests.preformOrder;
 
 public class CatalogFilterTest {
@@ -23,7 +27,7 @@ public class CatalogFilterTest {
     private JSONArray queries;
     Logger logger = LogManager.getLogger(CatalogFilterTest.class);
 
-    public void loadQueriesFromJson(String fileName){
+    public void loadQueriesFromJson(String fileName) {
         try {
             JSONParser jsonParser = new JSONParser();
             FileReader reader;
@@ -33,13 +37,13 @@ public class CatalogFilterTest {
             queries = (JSONArray) jsonParser.parse(reader);
             logger.info("Loading queries from {}",
                     fileName);
-        } catch (ParseException | IOException e ) {
+        } catch (ParseException | IOException e) {
             logger.error("Error loading queries from {}\nwith error: {}",
                     fileName, e);
         }
     }
 
-    public JSONArray loadProductsFromJson(String fileName){
+    public JSONArray loadProductsFromJson(String fileName) {
         JSONArray products = null;
         try {
             JSONParser jsonParser = new JSONParser();
@@ -50,7 +54,7 @@ public class CatalogFilterTest {
             products = (JSONArray) jsonParser.parse(reader);
             logger.info("Loading products from {}",
                     fileName);
-        } catch (ParseException | IOException e ) {
+        } catch (ParseException | IOException e) {
             logger.error("Error loading products from {}\nwith error: {}",
                     fileName, e);
         }
@@ -66,24 +70,23 @@ public class CatalogFilterTest {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
-
     @Test
-    public void testBasicSearch(){
+    public void testBasicSearch() {
         loadQueriesFromJson("search-apple.json");
         preformSearch();
     }
 
     @Test
-    public void testPriceRange(){
+    public void testPriceRange() {
         loadQueriesFromJson("search-range.json");
         preformSearch();
     }
 
     @Test
-    public void testStockSearch(){
+    public void testStockSearch() {
         loadQueriesFromJson("search-stock.json");
         new_order_page page = new new_order_page(driver);
         JSONArray products = loadProductsFromJson("order-sold-out.json");
@@ -91,8 +94,8 @@ public class CatalogFilterTest {
         preformSearch(page);
     }
 
-    public void preformSearch(){
-        new_order_page page = new  new_order_page(driver);
+    public void preformSearch() {
+        new_order_page page = new new_order_page(driver);
         preformSearch(page);
     }
 
@@ -110,22 +113,82 @@ public class CatalogFilterTest {
 
             logger.info("searching for {} in category {}", term, category);
 
-            if(inStock){
+            if (inStock) {
                 page.toggleStock();
                 logger.debug("searching only products in stock only");
             }
 
-            if(price > 0){
+            if (price > 0) {
                 page.setPrice(price);
-                logger.debug("price rage is set to 0-{}$",price);
+                logger.debug("price rage is set to 0-{}$", price);
             }
 
-            if(page.isCatalogEmpty()){
+            if (page.isCatalogEmpty()) {
                 logger.error("no items were found");
-            }
-            else {
+            } else {
                 logger.info("items were found");
             }
         }
+    }
+
+    @Test
+    public void testApi() {
+        new_order_page page = new new_order_page(driver);
+        loadQueriesFromJson("search-api-category.json");
+
+        for (Object query : queries) {
+            JSONObject obj = (JSONObject) query;
+
+            String category = (String) obj.get("category");
+            String apiCategory = (String) obj.get("api-category");
+
+            page.selectCategory(category);
+            logger.info("checking category {}", category);
+
+            try {
+                String res = getProductsFromCategoriesAPI(apiCategory);
+                JSONParser jsonParser = new JSONParser();
+                JSONObject apiJson = (JSONObject) jsonParser.parse(res);
+                JSONArray fromAPI = (JSONArray) apiJson.get("products");
+
+                for (Object item : fromAPI) {
+                    JSONObject product = (JSONObject) item;
+
+                    String title = (String) product.get("title");
+                    int id = ((Number) product.get("id")).intValue();
+                    String prodCategory = (String) product.get("category");
+
+                    if (!prodCategory.equals(apiCategory)) {
+                        logger.error("api for category {} returned a {} from category {}", apiCategory, title, prodCategory);
+                        break;
+                    }
+
+                    if (!page.isProductInCatalog(id, title)) {
+                        logger.error("api for category {} returned a {} which doesn't exist on the site", apiCategory, title);
+                        break;
+                    }
+                }
+            } catch (Exception e) {
+                logger.error(e.getMessage());
+            }
+        }
+    }
+
+    public String getProductsFromCategoriesAPI(String apiCategory) {
+
+        RestAssured.baseURI = "https://dummyjson.com/products/category/";
+
+        String url = apiCategory + "?limit=10";
+
+        logger.info("fetching products from {}{}", baseURI, url);
+
+        Response response = (Response) given()
+                .header("Content-type", "application/json")
+                .when()
+                .get(url)
+                .then()
+                .extract();
+
+        return response.asString();
     }
 }
