@@ -1,16 +1,114 @@
 [
   {
-    "description": "click navigation button to move from another page to the target page",
+    "description": "from Home to Home",
+    "startPath": "/",
+    "buttonId": "nav-home",
+    "expectedPath": "/",
+    "expectChange": false
+  },
+  {
+    "description": "from Home to New Order",
+    "startPath": "/",
+    "buttonId": "nav-new-order",
+    "expectedPath": "/order",
+    "expectChange": true
+  },
+  {
+    "description": "from Home to Order History",
+    "startPath": "/",
+    "buttonId": "nav-order-history",
+    "expectedPath": "/history",
+    "expectChange": true
+  },
+  {
+    "description": "from Home to Returns",
+    "startPath": "/",
+    "buttonId": "nav-returns",
+    "expectedPath": "/returns",
+    "expectChange": true
+  },
+  {
+    "description": "from New Order to Home",
+    "startPath": "/order",
+    "buttonId": "nav-home",
+    "expectedPath": "/",
+    "expectChange": true
+  },
+  {
+    "description": "from New Order to New Order",
+    "startPath": "/order",
+    "buttonId": "nav-new-order",
+    "expectedPath": "/order",
+    "expectChange": false
+  },
+  {
+    "description": "from New Order to Order History",
+    "startPath": "/order",
+    "buttonId": "nav-order-history",
+    "expectedPath": "/history",
+    "expectChange": true
+  },
+  {
+    "description": "from New Order to Returns",
+    "startPath": "/order",
+    "buttonId": "nav-returns",
+    "expectedPath": "/returns",
+    "expectChange": true
+  },
+  {
+    "description": "from Order History to Home",
+    "startPath": "/history",
+    "buttonId": "nav-home",
+    "expectedPath": "/",
+    "expectChange": true
+  },
+  {
+    "description": "from Order History to New Order",
     "startPath": "/history",
     "buttonId": "nav-new-order",
     "expectedPath": "/order",
     "expectChange": true
   },
   {
-    "description": "click navigation button to move to the same current page",
-    "startPath": "/order",
+    "description": "from Order History to Order History",
+    "startPath": "/history",
+    "buttonId": "nav-order-history",
+    "expectedPath": "/history",
+    "expectChange": false
+  },
+  {
+    "description": "from Order History to Returns",
+    "startPath": "/history",
+    "buttonId": "nav-returns",
+    "expectedPath": "/returns",
+    "expectChange": true
+  },
+  {
+    "description": "from Returns to Home",
+    "startPath": "/returns",
+    "buttonId": "nav-home",
+    "expectedPath": "/",
+    "expectChange": true
+  },
+  {
+    "description": "from Returns to New Order",
+    "startPath": "/returns",
     "buttonId": "nav-new-order",
     "expectedPath": "/order",
+    "expectChange": true
+  },
+  {
+    "description": "from Returns to Order History",
+    "startPath": "/returns",
+    "buttonId": "nav-order-history",
+    "expectedPath": "/history",
+    "expectChange": true
+  },
+  {
+    "description": "from Returns to Returns",
+    "startPath": "/returns",
+    "buttonId": "nav-returns",
+    "expectedPath": "/returns",
     "expectChange": false
   }
 ]
