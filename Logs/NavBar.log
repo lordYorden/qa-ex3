@@ -1,0 +1,18 @@
+[INFO ] 2026-06-22 14:51:52.127 [main] NavigationBarTest - Loading navigation steps from navigation-bar.json
+[INFO ] 2026-06-22 14:51:52.151 [main] NavigationBarTest - starting navigation step: click navigation button to move from another page to the target page
+[INFO ] 2026-06-22 14:51:53.530 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 14:51:54.370 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 14:51:54.376 [main] NavigationBarTest - navigation from /history to /order completed successfully
+[INFO ] 2026-06-22 14:51:54.376 [main] NavigationBarTest - starting navigation step: click navigation button to move to the same current page
+[INFO ] 2026-06-22 14:51:54.799 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 14:51:55.476 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 14:51:55.476 [main] NavigationBarTest - navigation button kept user on the same page: /order
+[INFO ] 2026-06-22 14:55:25.796 [main] NavigationBarTest - Loading navigation steps from navigation-bar.json
+[INFO ] 2026-06-22 14:55:25.838 [main] NavigationBarTest - starting navigation step: click navigation button to move from another page to the target page
+[INFO ] 2026-06-22 14:55:46.630 [main] NavigationBarTest - current page before click: /history
+[INFO ] 2026-06-22 14:55:48.817 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 14:55:48.817 [main] NavigationBarTest - navigation from /history to /order completed successfully
+[INFO ] 2026-06-22 14:55:48.818 [main] NavigationBarTest - starting navigation step: click navigation button to move to the same current page
+[INFO ] 2026-06-22 14:55:51.208 [main] NavigationBarTest - current page before click: /order
+[INFO ] 2026-06-22 14:55:53.335 [main] NavigationBarTest - current page after click: /order
+[INFO ] 2026-06-22 14:55:53.335 [main] NavigationBarTest - navigation button kept user on the same page: /order

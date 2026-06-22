@@ -1,0 +1,16 @@
+[
+  {
+    "description": "click navigation button to move from another page to the target page",
+    "startPath": "/history",
+    "buttonId": "nav-new-order",
+    "expectedPath": "/order",
+    "expectChange": true
+  },
+  {
+    "description": "click navigation button to move to the same current page",
+    "startPath": "/order",
+    "buttonId": "nav-new-order",
+    "expectedPath": "/order",
+    "expectChange": false
+  }
+]
